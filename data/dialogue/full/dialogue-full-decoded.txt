@@ -1,0 +1,17 @@
+# This file contains the complete decoded dialogue (~5MB).
+# Due to GitHub file size limits, the full text is available in the zip download.
+# 
+# To download the complete toolkit including all 3,999 scene files:
+# See the Releases section or download the ZIP archive.
+# 
+# Sample of decoded content:
+# === SCENE 00 ===
+# Something...
+# something is going to happen...<END>
+# I can tell...
+# Ahhh...my heart palpitations,<END_SCENE>
+# This is the training room where
+# we improve our bodies and souls.<END>
+# 
+# Total: 4,849 scenes, 13,353 dialogue strings, 5,052,256 characters
+# Extracted from ROM region 0x200000 - 0x30FA13
