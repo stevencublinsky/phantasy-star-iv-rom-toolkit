@@ -1,0 +1,22 @@
+# Phantasy Star IV - Pointer Table Analysis
+# Working Designs 6.01 Retranslation
+
+## 32-bit Pointer Candidates
+
+| Address | Ptr 1 | Ptr 2 | Delta |
+|---------|-------|-------|-------|
+
+## 24-bit Pointer Candidates
+
+| Address | Ptr 1 | Ptr 2 | Delta |
+|---------|-------|-------|-------|
+| 0x2002C4 | 0x2D0023 | 0x2D002E | 11 |
+| 0x2009F0 | 0x2E2200 | 0x2E2223 | 35 |
+| 0x201068 | 0x2E0023 | 0x2E0027 | 4 |
+| 0x2012BA | 0x2D0023 | 0x2D002E | 11 |
+| 0x201347 | 0x2D1F28 | 0x2D1F2D | 5 |
+| 0x201464 | 0x2326FC | 0x232820 | 292 |
+| 0x201A6D | 0x2D0023 | 0x2D0028 | 5 |
+| 0x201BB7 | 0x232D00 | 0x232D28 | 40 |
+| 0x201CEF | 0x232D00 | 0x232E3B | 315 |
+| 0x201CFB | 0x232D00 | 0x232E3B | 315 |
