@@ -4,6 +4,18 @@ Complete extraction, analysis, and rebuild toolkit for **Phantasy Star IV: The E
 
 ---
 
+## Download the Complete Archive
+
+> **This repository contains all documentation, scripts, and data files.**
+>
+> **For the complete archive including all binary assets, PNG visualizations, and 3,999 individual scene files:**
+>
+> **[Download phantasy-star-iv-rom-toolkit.zip](sandbox:///mnt/agents/output/phantasy-star-iv-rom-toolkit.zip)** (18 MB)
+>
+> The ZIP contains everything in this repo plus all binary files, high-res visualizations, and per-scene dialogue files.
+
+---
+
 ## What's In This Repo
 
 This project contains a full structural analysis of the PSIV Genesis/Mega Drive ROM, including decoded dialogue text, font extraction, graphics analysis, palette data, game data tables, and a complete rebuild guide.
@@ -131,6 +143,32 @@ python scripts/extract_palettes.py \
 | 0xC2 | Clear window |
 | 0xC3 | Wait for button |
 | 0xC4-0xC5 | End of text |
+
+---
+
+## Graphics Modernization
+
+See `docs/05-Graphics-Modernization-Research.md` for a comprehensive survey of approaches:
+
+1. **Algorithmic Upscale** (xBRZ/Super xBR) - 4-5 weeks, authentic pixel look
+2. **AI Neural Upscale** (Real-ESRGAN + edge masks) - 9-10 weeks, enhanced detail
+3. **HD-2D Style** (Octopath Traveler approach) - 6-12 months, modern-classic hybrid
+
+---
+
+## Complete Archive Contents
+
+The ZIP download contains everything in this repo plus:
+
+| Content | Size | Description |
+|---------|------|-------------|
+| `data/dialogue/full/dialogue-full-decoded.txt` | ~5 MB | Complete decoded dialogue |
+| `data/dialogue/by-scene/` | 3,999 files | Per-scene dialogue files |
+| `data/graphics/raw/*.bin` | ~52 KB | Extracted graphics binaries |
+| `data/palettes/palettes-raw.bin` | 428 B | Raw palette data |
+| `visualizations/fonts/*.png` | ~750 KB | High-res font tile renders |
+| `visualizations/rom-maps/*.png` | ~18 MB | Full ROM heat maps |
+| `visualizations/palettes/*.png` | ~47 KB | Palette color swatches |
 
 ---
 
