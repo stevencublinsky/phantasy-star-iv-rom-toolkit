@@ -6,7 +6,7 @@ Complete extraction, analysis, and rebuild toolkit for **Phantasy Star IV: The E
 
 ## Download the Complete Archive
 
-> **This repository contains all documentation, scripts, and data files.**
+> **This repository contains all documentation, scripts, data CSVs, and analysis reports.**
 >
 > **For the complete archive including all binary assets, PNG visualizations, and 3,999 individual scene files:**
 >
@@ -16,23 +16,38 @@ Complete extraction, analysis, and rebuild toolkit for **Phantasy Star IV: The E
 
 ---
 
-## What's In This Repo
+## Latest Changes
 
-This project contains a full structural analysis of the PSIV Genesis/Mega Drive ROM, including decoded dialogue text, font extraction, graphics analysis, palette data, game data tables, and a complete rebuild guide.
+See [CHANGELOG.md](CHANGELOG.md) for full version history.
+
+### v1.0.0 (2026-07-12)
+- **Text encoding cracked** - Custom single-byte encoding mapped (A-Z, a-z, punctuation)
+- **Full dialogue extracted** - 5,052,256 characters decoded from expanded ROM region
+- **Font tiles located** - 768 tiles at 0x109400+ (1bpp 8x8 format)
+- **Graphics analysis** - 9 regions extracted with hex dumps and byte frequency reports
+- **Palettes extracted** - 10 Genesis 9-bit BGR palettes with RGB values
+- **Game data located** - 8 items, 9 techniques, 11 skills, 9 character names
+- **4 Python scripts** - Text extraction, tile extraction, palette scanning, ROM mapping
+- **7 documentation pages** - Complete analysis, encoding guide, rebuild guide, master index
+- **Graphics modernization research** - 3-tier approach (algorithmic, AI, HD-2D)
+
+---
+
+## What's In This Repo
 
 | Directory | Contents |
 |-----------|----------|
-| `docs/` | All analysis reports, encoding guides, rebuild documentation |
-| `data/text-encoding/` | Character table (.tbl) for the custom text encoding |
-| `data/game-data/` | Items, techniques, skills, pointer tables |
-| `data/dialogue/full/` | Complete decoded script (~5MB of dialogue) |
-| `data/dialogue/by-scene/` | 3,999 individual scene files |
-| `data/graphics/raw/` | Extracted graphics binaries from ROM |
+| `docs/` | 7 analysis documents (ROM report, encoding guide, rebuild guide, master index, graphics research, script stats, graphics index) |
+| `data/text-encoding/` | `psiv.tbl` - the cracked character encoding table |
+| `data/game-data/` | Items, techniques, skills CSVs + pointer table analysis |
+| `data/dialogue/full/` | Full decoded script (~5MB in ZIP) |
+| `data/dialogue/by-scene/` | 3,999 individual scene files (in ZIP) |
+| `data/graphics/raw/` | 9 extracted graphics binaries |
 | `data/graphics/analysis/` | Hex dump previews and byte frequency reports |
 | `data/palettes/` | Genesis palette data (raw + RGB values) |
-| `scripts/` | Python extraction tools (text, tiles, palettes, ROM map) |
+| `scripts/` | 4 Python extraction tools |
 | `visualizations/` | Font tile renders, ROM heat maps, palette previews |
-| `research/` | Graphics modernization research report |
+| `CHANGELOG.md` | Full version history |
 
 ---
 
@@ -164,7 +179,7 @@ The ZIP download contains everything in this repo plus:
 |---------|------|-------------|
 | `data/dialogue/full/dialogue-full-decoded.txt` | ~5 MB | Complete decoded dialogue |
 | `data/dialogue/by-scene/` | 3,999 files | Per-scene dialogue files |
-| `data/graphics/raw/*.bin` | ~52 KB | Extracted graphics binaries |
+| `data/graphics/raw/*.bin` | ~52 KB | All 9 extracted graphics binaries |
 | `data/palettes/palettes-raw.bin` | 428 B | Raw palette data |
 | `visualizations/fonts/*.png` | ~750 KB | High-res font tile renders |
 | `visualizations/rom-maps/*.png` | ~18 MB | Full ROM heat maps |
